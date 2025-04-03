@@ -113,14 +113,12 @@ h2:hover{
     flex-direction: column;
 
 }
-#box1,#box2{
+.box1{
     width: 12vw;
     height: 12vw;
     border-radius: 100%;
     background-color: white;
     border: solid black 4px;
-}
-#box1{
     background-image: url(../img/mode1.jpg);
     background-size: cover  ;
     background-position: center;
