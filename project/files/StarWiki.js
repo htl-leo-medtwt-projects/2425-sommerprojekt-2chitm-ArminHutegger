@@ -1,3 +1,4 @@
+/// <reference path="../data/ships.js"/>
 let swiched = false;
 loadMode()
 function swich(){
