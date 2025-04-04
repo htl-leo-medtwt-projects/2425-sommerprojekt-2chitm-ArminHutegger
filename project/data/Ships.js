@@ -616,38 +616,6 @@ let ships=[
       }
     },
     {
-      "name": "Reclaimer",
-      "type": "Schrottschiff",
-      "manufacturer": "Drake Interplanetary",
-      "role": "Bergungs- und Recycling-Schiff",
-      "max_speed": "1000 m/s",
-      "cargo_capacity": "0 SCU",
-      "components": {
-        "engines": {
-          "name": "TR-6",
-          "size": "Size 2"
-        },
-        "shield": {
-          "name": "S-III",
-          "size": "Size 2"
-        },
-        "power_plant": {
-          "name": "PR-20",
-          "size": "Size 2"
-        },
-        "cooler": {
-          "name": "TR-8",
-          "size": "Size 2"
-        },
-        "weapons": [
-          {
-            "name": "Size 3 Laser Cannon",
-            "size": "Size 3"
-          }
-        ]
-      }
-    },
-    {
       "name": "Vulcan",
       "type": "Technisches Support-Schiff",
       "manufacturer": "Aegis Dynamics",
@@ -1052,38 +1020,6 @@ let ships=[
       }
     },
     {
-      "name": "Aegis Reclaimer",
-      "type": "Schrottschiff",
-      "manufacturer": "Aegis Dynamics",
-      "role": "Bergung, Recycling",
-      "max_speed": "1000 m/s",
-      "cargo_capacity": "0 SCU",
-      "components": {
-        "engines": {
-          "name": "TR-6",
-          "size": "Size 2"
-        },
-        "shield": {
-          "name": "S-VI",
-          "size": "Size 2"
-        },
-        "power_plant": {
-          "name": "PR-18",
-          "size": "Size 2"
-        },
-        "cooler": {
-          "name": "TR-7",
-          "size": "Size 2"
-        },
-        "weapons": [
-          {
-            "name": "Size 2 Laser Cannon",
-            "size": "Size 2"
-          }
-        ]
-      }
-    },
-    {
       "name": "Anvil Hornet F7C",
       "type": "Kampfschiff",
       "manufacturer": "Anvil Aerospace",
@@ -1284,74 +1220,6 @@ let ships=[
       }
     },
     {
-      "name": "RSI Constellation Andromeda",
-      "type": "Multirole Kampfschiff",
-      "manufacturer": "Roberts Space Industries",
-      "role": "Fighter, Bomber, Transport",
-      "max_speed": "2000 m/s",
-      "cargo_capacity": "60 SCU",
-      "components": {
-        "engines": {
-          "name": "TR-10",
-          "size": "Size 3"
-        },
-        "shield": {
-          "name": "S-VI",
-          "size": "Size 3"
-        },
-        "power_plant": {
-          "name": "PR-24",
-          "size": "Size 3"
-        },
-        "cooler": {
-          "name": "TR-12",
-          "size": "Size 3"
-        },
-        "weapons": [
-          {
-            "name": "Size 3 Laser Repeater",
-            "size": "Size 3"
-          },
-          {
-            "name": "Size 2 Torpedo",
-            "size": "Size 2"
-          }
-        ]
-      }
-    },
-    {
-      "name": "MISC Freelancer",
-      "type": "Transport-Schiff",
-      "manufacturer": "MISC",
-      "role": "Transporter",
-      "max_speed": "2000 m/s",
-      "cargo_capacity": "66 SCU",
-      "components": {
-        "engines": {
-          "name": "TR-8",
-          "size": "Size 2"
-        },
-        "shield": {
-          "name": "FR-76",
-          "size": "Size 2"
-        },
-        "power_plant": {
-          "name": "PR-22",
-          "size": "Size 2"
-        },
-        "cooler": {
-          "name": "TR-7",
-          "size": "Size 2"
-        },
-        "weapons": [
-          {
-            "name": "Size 2 Laser Repeater",
-            "size": "Size 2"
-          }
-        ]
-      }
-    },
-    {
       "name": "Crusader Hercules Starlifter",
       "type": "Transport-Schiff",
       "manufacturer": "Crusader Industries",
@@ -1478,7 +1346,803 @@ let ships=[
           }
         ]
       }
+    },
+    {
+      "name": "Aegis Retaliator",
+      "type": "Bomber",
+      "manufacturer": "Aegis Dynamics",
+      "role": "Bomber",
+      "max_speed": "2000 m/s",
+      "cargo_capacity": "0 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-10",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "FR-76",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-24",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 4 Torpedo",
+            "size": "Size 4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RSI Constellation Phoenix",
+      "type": "Luxus-Transport",
+      "manufacturer": "Roberts Space Industries",
+      "role": "Luxus-Transport",
+      "max_speed": "2000 m/s",
+      "cargo_capacity": "66 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-10",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "S-VI",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-24",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 2 Laser Repeater",
+            "size": "Size 2"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MISC Starfarer",
+      "type": "Tanker-Schiff",
+      "manufacturer": "MISC",
+      "role": "Fuel Transport",
+      "max_speed": "1600 m/s",
+      "cargo_capacity": "0 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "S-VI",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-24",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 2 Laser Repeater",
+            "size": "Size 2"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Origin 890 Jump",
+      "type": "Luxus-Schiff",
+      "manufacturer": "Origin Jumpworks",
+      "role": "Luxus-Transport, Kreuzer",
+      "max_speed": "2000 m/s",
+      "cargo_capacity": "0 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-10",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "S-VI",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-24",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 4 Laser Cannon",
+            "size": "Size 4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Aegis Vanguard Harbinger",
+      "type": "Kampfschiff",
+      "manufacturer": "Aegis Dynamics",
+      "role": "Heavy Fighter",
+      "max_speed": "2300 m/s",
+      "cargo_capacity": "0 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "S-VI",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-24",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-11",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 4 Torpedo",
+            "size": "Size 4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Drake Buccaneer",
+      "type": "Leichter Jäger",
+      "manufacturer": "Drake Interplanetary",
+      "role": "Light Fighter",
+      "max_speed": "2500 m/s",
+      "cargo_capacity": "0 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-8",
+          "size": "Size 2"
+        },
+        "shield": {
+          "name": "FR-66",
+          "size": "Size 2"
+        },
+        "power_plant": {
+          "name": "PR-20",
+          "size": "Size 2"
+        },
+        "cooler": {
+          "name": "TR-8",
+          "size": "Size 2"
+        },
+        "weapons": [
+          {
+            "name": "Size 2 Laser Repeater",
+            "size": "Size 2"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Anvil Valkyrie",
+      "type": "Transportschiff",
+      "manufacturer": "Anvil Aerospace",
+      "role": "Assault Transport",
+      "max_speed": "1700 m/s",
+      "cargo_capacity": "90 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "S-VI",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-24",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-11",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 4 Laser Cannon",
+            "size": "Size 4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Aegis Eclipse",
+      "type": "Stealth Bomber",
+      "manufacturer": "Aegis Dynamics",
+      "role": "Stealth Bomber",
+      "max_speed": "2500 m/s",
+      "cargo_capacity": "0 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-10",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "FR-76",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-24",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-11",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 3 Torpedo",
+            "size": "Size 3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Crusader Mercury Star Runner",
+      "type": "Transport-Schiff",
+      "manufacturer": "Crusader Industries",
+      "role": "Data Transport",
+      "max_speed": "2200 m/s",
+      "cargo_capacity": "120 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "S-VI",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-24",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 2 Laser Repeater",
+            "size": "Size 2"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MISC Hull C",
+      "type": "Fracht-Transporter",
+      "manufacturer": "MISC",
+      "role": "Freight Transport",
+      "max_speed": "1500 m/s",
+      "cargo_capacity": "4600 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-15",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "S-VI",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-24",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 3 Laser Cannon",
+            "size": "Size 3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Aegis Gladius Valiant",
+      "type": "Leichter Kämpfer",
+      "manufacturer": "Aegis Dynamics",
+      "role": "Light Fighter",
+      "max_speed": "2700 m/s",
+      "cargo_capacity": "0 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-9",
+          "size": "Size 2"
+        },
+        "shield": {
+          "name": "FR-66",
+          "size": "Size 2"
+        },
+        "power_plant": {
+          "name": "PR-20",
+          "size": "Size 2"
+        },
+        "cooler": {
+          "name": "TR-8",
+          "size": "Size 2"
+        },
+        "weapons": [
+          {
+            "name": "Size 2 Laser Repeater",
+            "size": "Size 2"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Drake Interplanetary Kraken",
+      "type": "Flotten-Schiff",
+      "manufacturer": "Drake Interplanetary",
+      "role": "Carrier",
+      "max_speed": "1700 m/s",
+      "cargo_capacity": "800 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "S-VI",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-24",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 3 Laser Repeater",
+            "size": "Size 3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Aegis Hammerhead",
+      "type": "Flotten-Schiff",
+      "manufacturer": "Aegis Dynamics",
+      "role": "Anti-Fighter Gunship",
+      "max_speed": "1700 m/s",
+      "cargo_capacity": "0 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "S-VI",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-24",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 4 Laser Cannon",
+            "size": "Size 4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MISC Hull E",
+      "type": "Fracht-Transporter",
+      "manufacturer": "MISC",
+      "role": "Heavy Freight Transport",
+      "max_speed": "1300 m/s",
+      "cargo_capacity": "12000 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-16",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "S-VI",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-26",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-13",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 3 Laser Cannon",
+            "size": "Size 3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Anvil Valkyrie",
+      "type": "Transporter",
+      "manufacturer": "Anvil Aerospace",
+      "role": "Heavy Assault Transport",
+      "max_speed": "2200 m/s",
+      "cargo_capacity": "0 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "S-VI",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-24",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 4 Laser Cannon",
+            "size": "Size 4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Drake Cutlass Red",
+      "type": "Medizinischer Transporter",
+      "manufacturer": "Drake Interplanetary",
+      "role": "Medical Evacuation",
+      "max_speed": "2100 m/s",
+      "cargo_capacity": "46 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-9",
+          "size": "Size 2"
+        },
+        "shield": {
+          "name": "FR-66",
+          "size": "Size 2"
+        },
+        "power_plant": {
+          "name": "PR-22",
+          "size": "Size 2"
+        },
+        "cooler": {
+          "name": "TR-7",
+          "size": "Size 2"
+        },
+        "weapons": [
+          {
+            "name": "Size 2 Laser Repeater",
+            "size": "Size 2"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MISC Starfarer",
+      "type": "Tanker-Schiff",
+      "manufacturer": "MISC",
+      "role": "Fuel Transport",
+      "max_speed": "1900 m/s",
+      "cargo_capacity": "320 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-14",
+          "size": "Size 4"
+        },
+        "shield": {
+          "name": "S-VII",
+          "size": "Size 4"
+        },
+        "power_plant": {
+          "name": "PR-28",
+          "size": "Size 4"
+        },
+        "cooler": {
+          "name": "TR-14",
+          "size": "Size 4"
+        },
+        "weapons": [
+          {
+            "name": "Size 3 Laser Repeater",
+            "size": "Size 3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Aegis Reclaimer",
+      "type": "Schrottschiff",
+      "manufacturer": "Aegis Dynamics",
+      "role": "Salvage",
+      "max_speed": "1800 m/s",
+      "cargo_capacity": "0 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-10",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "S-VI",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-24",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-10",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 4 Laser Cannon",
+            "size": "Size 4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Origin 890 Jump",
+      "type": "Luxus-Kreuzer",
+      "manufacturer": "Origin Jumpworks",
+      "role": "Luxury Cruiser",
+      "max_speed": "1950 m/s",
+      "cargo_capacity": "0 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-14",
+          "size": "Size 4"
+        },
+        "shield": {
+          "name": "S-VII",
+          "size": "Size 4"
+        },
+        "power_plant": {
+          "name": "PR-28",
+          "size": "Size 4"
+        },
+        "cooler": {
+          "name": "TR-14",
+          "size": "Size 4"
+        },
+        "weapons": [
+          {
+            "name": "Size 3 Laser Cannon",
+            "size": "Size 3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Anvil C8X Pisces Expedition",
+      "type": "Expeditionsschiff",
+      "manufacturer": "Anvil Aerospace",
+      "role": "Explorer",
+      "max_speed": "2100 m/s",
+      "cargo_capacity": "24 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-8",
+          "size": "Size 2"
+        },
+        "shield": {
+          "name": "FR-55",
+          "size": "Size 2"
+        },
+        "power_plant": {
+          "name": "PR-18",
+          "size": "Size 2"
+        },
+        "cooler": {
+          "name": "TR-6",
+          "size": "Size 2"
+        },
+        "weapons": [
+          {
+            "name": "Size 2 Laser Repeater",
+            "size": "Size 2"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Crusader Hercules A2",
+      "type": "Transporter",
+      "manufacturer": "Crusader Industries",
+      "role": "Heavy Cargo Transport",
+      "max_speed": "2200 m/s",
+      "cargo_capacity": "0 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-14",
+          "size": "Size 4"
+        },
+        "shield": {
+          "name": "S-VII",
+          "size": "Size 4"
+        },
+        "power_plant": {
+          "name": "PR-28",
+          "size": "Size 4"
+        },
+        "cooler": {
+          "name": "TR-14",
+          "size": "Size 4"
+        },
+        "weapons": [
+          {
+            "name": "Size 4 Laser Cannon",
+            "size": "Size 4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Aegis Eclipse",
+      "type": "Stealth-Bomber",
+      "manufacturer": "Aegis Dynamics",
+      "role": "Stealth Bomber",
+      "max_speed": "2300 m/s",
+      "cargo_capacity": "0 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-11",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "S-VI",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-24",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 4 Laser Cannon",
+            "size": "Size 4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Drake Dragonfly",
+      "type": "Bodenfahrzeug",
+      "manufacturer": "Drake Interplanetary",
+      "role": "Planetary Transport",
+      "max_speed": "1100 m/s",
+      "cargo_capacity": "0 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-6",
+          "size": "Size 2"
+        },
+        "shield": {
+          "name": "FR-55",
+          "size": "Size 2"
+        },
+        "power_plant": {
+          "name": "PR-18",
+          "size": "Size 2"
+        },
+        "cooler": {
+          "name": "TR-5",
+          "size": "Size 2"
+        },
+        "weapons": []
+      }
+    },
+    {
+      "name": "Anvil Carrack",
+      "type": "Expeditionsschiff",
+      "manufacturer": "Anvil Aerospace",
+      "role": "Explorer",
+      "max_speed": "2300 m/s",
+      "cargo_capacity": "450 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-12",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "S-VI",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-24",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-10",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 3 Laser Repeater",
+            "size": "Size 3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Banu Defender",
+      "type": "Jäger",
+      "manufacturer": "Banu",
+      "role": "Defensive Fighter",
+      "max_speed": "2200 m/s",
+      "cargo_capacity": "0 SCU",
+      "components": {
+        "engines": {
+          "name": "TR-10",
+          "size": "Size 3"
+        },
+        "shield": {
+          "name": "S-VI",
+          "size": "Size 3"
+        },
+        "power_plant": {
+          "name": "PR-24",
+          "size": "Size 3"
+        },
+        "cooler": {
+          "name": "TR-10",
+          "size": "Size 3"
+        },
+        "weapons": [
+          {
+            "name": "Size 3 Laser Repeater",
+            "size": "Size 3"
+          }
+        ]
+      }
     }
   ]
+  
     
           

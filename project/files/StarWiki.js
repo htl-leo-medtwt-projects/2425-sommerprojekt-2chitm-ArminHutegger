@@ -1,4 +1,4 @@
-/// <reference path="../data/ships.js"/>
+/// <reference path="../data/Ships.js"/>
 let swiched = false;
 loadMode()
 function swich(){
@@ -39,4 +39,7 @@ function loadMode() {
 
     }
 
+}
+for(let i = 0;i<ships.length;i++){
+    console.log(ships[i].name)
 }
