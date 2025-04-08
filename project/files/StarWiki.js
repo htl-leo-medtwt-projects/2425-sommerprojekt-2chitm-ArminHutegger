@@ -1,4 +1,5 @@
 /// <reference path="../data/Ships.js"/>
+/// <reference path="../data/wapons.js"/>
 let swiched = false;
 loadMode()
 function swich(){
@@ -41,5 +42,8 @@ function loadMode() {
 
 }
 for(let i = 0;i<ships.length;i++){
-    console.log(ships[i].name)
+ console.log(ships[i].name)
+}
+for(let i = 0;i<wapons.length;i++){
+    console.log(wapons[i].name)
 }
