@@ -1,5 +1,6 @@
 /// <reference path="../data/Ships.js"/>
 /// <reference path="../data/wapons.js"/>
+/// <reference path="../data/armor.js"/>
 let swiched = false;
 loadMode()
 function swich(){
