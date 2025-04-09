@@ -1,4 +1,4 @@
-[
+let components=[
     {
       "name": "FR-76 Shield Generator",
       "type": "Shield Generator",
@@ -118,9 +118,7 @@
       "efficiency": "Medium",
       "power_draw": "N/A",
       "special_feature": "Reliable lock-on"
-    }
-  ]
-  [
+    },
     {
       "name": "Rampart Shield",
       "type": "Shield Generator",
@@ -240,9 +238,7 @@
       "efficiency": "Medium",
       "power_draw": "N/A",
       "special_feature": "Wide splash radius"
-    }
-  ]
-  [
+    },
     {
       "name": "Guardian Shield",
       "type": "Shield Generator",
@@ -362,9 +358,7 @@
       "efficiency": "Medium",
       "power_draw": "N/A",
       "special_feature": "Piercing armor payload"
-    }
-  ]
-  [
+    },
     {
       "name": "Bulwark Shield",
       "type": "Shield Generator",
@@ -484,9 +478,7 @@
       "efficiency": "Medium",
       "power_draw": "N/A",
       "special_feature": "Slow but destructive"
-    }
-  ]
-  [
+    },
     {
       "name": "Sentinel Shield",
       "type": "Shield Generator",
@@ -606,9 +598,7 @@
       "efficiency": "High",
       "power_draw": "N/A",
       "special_feature": "Silent strike capability"
-    }
-  ]
-  [
+    },
     {
       "name": "Rampart Shield",
       "type": "Shield Generator",
@@ -728,9 +718,7 @@
       "efficiency": "Medium",
       "power_draw": "N/A",
       "special_feature": "Coolant-disrupting payload"
-    }
-  ]
-  [
+    },
     {
       "name": "Guardian Shield",
       "type": "Shield Generator",

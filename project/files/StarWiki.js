@@ -1,6 +1,7 @@
 /// <reference path="../data/Ships.js"/>
 /// <reference path="../data/wapons.js"/>
 /// <reference path="../data/armor.js"/>
+/// <reference path="../data/components.js"/>
 let swiched = false;
 loadMode()
 function swich(){
@@ -50,4 +51,7 @@ for(let i = 0;i<wapons.length;i++){
 }
 for(let i = 0;i<armor.length;i++){
     console.log(armor[i].name)
+}
+for(let i = 0;i<components.length;i++){
+    console.log(components[i].name)
 }
