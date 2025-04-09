@@ -48,3 +48,6 @@ for(let i = 0;i<ships.length;i++){
 for(let i = 0;i<wapons.length;i++){
     console.log(wapons[i].name)
 }
+for(let i = 0;i<armor.length;i++){
+    console.log(armor[i].name)
+}
