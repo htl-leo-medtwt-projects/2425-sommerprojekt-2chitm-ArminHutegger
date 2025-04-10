@@ -51,22 +51,26 @@ let armorList = "";
 let componentsList = "";
 
 for (let i = 0; i < ships.length; i++) {
-    shipList += "<p class='ergS'>" + ships[i].name + "</p>";
+    shipList += `<p onclick='startVid( "${ships[i].name}","${ships[i].type}","${ships[i].manufacturer}","${ships[i].role}","${ships[i].max_speed}","${ships[i].cargo_capacity}")' class='ergS'>${ships[i].name}</p>`;
 }
 for (let i = 0; i < wapons.length; i++) {
-    waponsList += "<p class='ergW'>" + wapons[i].name + "</p>";
+    waponsList += `<p onclick='startVid( "${wapons[i].name}","${wapons[i].type}","${wapons[i].size}","${wapons[i].manufacturer}","${wapons[i].fire_mode}","${wapons[i].use}")' class='ergW'>${wapons[i].name}</p>`;
 }
 for (let i = 0; i < armor.length; i++) {
-    armorList += "<p class='ergA'>" + armor[i].name + "</p>";
+    armorList += `<p onclick='startVid( "${armor[i].name}","${armor[i].type}","${armor[i].protection_level}","${armor[i].manufacturer}","${armor[i].classification}","${armor[i].use}")' class='ergA'>${armor[i].name}</p>`;
 }
 for (let i = 0; i < components.length; i++) {
-    componentsList += "<p class='ergC'>" + components[i].name + "</p>";
+    componentsList += `<p onclick='startVid( "${components[i].name}","${components[i].type}","${components[i].size}","${components[i].manufacturer}","${components[i].grade}","${components[i].special_feature}")' class='ergC'>${components[i].name}</p>`;
 }
-
-document.getElementById("ships").innerHTML = shipList;
+try{
+    document.getElementById("ships").innerHTML = shipList;
 document.getElementById("wapons").innerHTML = waponsList;
 document.getElementById("armor").innerHTML = armorList;
 document.getElementById("components").innerHTML = componentsList;
+}catch{
+
+}
+
 function toogleSearch(){
     shipList = "";
     waponsList = "";
@@ -75,25 +79,26 @@ function toogleSearch(){
     let search = document.getElementById("searchBar").value;
     for (let i = 0; i < ships.length; i++) {
         if (ships[i].name.toLowerCase().includes(search.toLowerCase())){
-            shipList += "<p class='ergS'>" + ships[i].name + "</p>";
+            shipList += `<p onclick='startVid( "${ships[i].name}","${ships[i].type}","${ships[i].manufacturer}","${ships[i].role}","${ships[i].max_speed}","${ships[i].cargo_capacity}")' class='ergS'>${ships[i].name}</p>`;
+
         }
 
     }
     for (let i = 0; i < wapons.length; i++) {
         if (wapons[i].name.toLowerCase().includes(search.toLowerCase())){
-            waponsList += "<p class='ergW'>" + wapons[i].name + "</p>";
+            waponsList += `<p onclick='startVid( "${wapons[i].name}","${wapons[i].type}","${wapons[i].size}","${wapons[i].manufacturer}","${wapons[i].fire_mode}","${wapons[i].use}")' class='ergW'>${wapons[i].name}</p>`;
         }
 
     }
     for (let i = 0; i < armor.length; i++) {
         if (armor[i].name.toLowerCase().includes(search.toLowerCase())){
-            armorList += "<p class='ergA'>" + armor[i].name + "</p>";
+            armorList += `<p onclick='startVid( "${armor[i].name}","${armor[i].type}","${armor[i].protection_level}","${armor[i].manufacturer}","${armor[i].classification}","${armor[i].use}")' class='ergA'>${armor[i].name}</p>`;
         }
 
     }
     for (let i = 0; i < components.length; i++) {
         if (components[i].name.toLowerCase().includes(search.toLowerCase())){
-            componentsList += "<p class='ergC'>" + components[i].name + "</p>";
+            componentsList += `<p onclick='startVid( "${components[i].name}","${components[i].type}","${components[i].size}","${components[i].manufacturer}","${components[i].grade}","${components[i].special_feature}")' class='ergC'>${components[i].name}</p>`;
         }
 
     }
@@ -102,4 +107,17 @@ function toogleSearch(){
     document.getElementById("wapons").innerHTML = waponsList;
     document.getElementById("armor").innerHTML = armorList;
     document.getElementById("components").innerHTML = componentsList;
+}
+let video = document.getElementById("vid");
+function startVid(info1,info2,info3,info4,info5,info5){
+    document.getElementById("inf").innerHTML = "<p>"+info1+"</p><p>"+info2+"</p><p>"+info3+"</p><p>"+info4+"</p><p>"+info5+"</p>"
+    document.getElementById("itemInfo").style.opacity = 1;
+    document.getElementById("itemInfo").style.zIndex = 100;
+    document.getElementById("ergebnisse").style.opacity = 0.2;
+    video.play()
+}
+function closeInfo(){
+    document.getElementById("itemInfo").style.opacity = 0;
+    document.getElementById("itemInfo").style.zIndex = -100;
+    document.getElementById("ergebnisse").style.opacity = 1;
 }

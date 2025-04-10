@@ -319,3 +319,46 @@ input{
 #ergebnisse h2:hover{
     background-color: #7d9bdb00;
 }
+#itemInfo{
+    position: fixed;
+    width: 80vw;
+    height: 78vh;
+    top: 11vh;
+    left: 10vw;
+    background-color: black;
+}
+#vid{
+    position: fixed;
+    width: 80vw;
+    height: 80vh;
+    top:  11vh;
+    left: 10vw;
+    z-index: 100;
+}
+#itemInfo{
+    z-index: -1000;
+    border: 1px solid black;
+    opacity: 0;
+    border-radius: 10px;
+}
+#close{
+    position: fixed;
+    width: 5vw;
+    height: 5vw;
+    z-index: 1000000000;
+    margin-top: 1vh;
+    margin-left: 1vw;
+
+}
+#inf{
+    position: fixed;
+    top: 12vw;
+    z-index: 1000;
+    text-align: center;
+    width: 50vw;
+    margin-left: 15vw;
+}
+#inf p{
+    font-size: 2.7vw;
+
+}
