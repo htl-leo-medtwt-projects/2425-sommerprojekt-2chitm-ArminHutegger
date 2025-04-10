@@ -21,10 +21,31 @@
     </div>
     <h1>Item Fidner</h1>
     <h2 class="slogen">Wir finden was Sie suchen!</h2>
-    <img class="head11" class="head1" src="../img/stanton1.jpg" alt="bild">
+    <img class="head11" class="head1" src="../img/finderImg.webp" alt="bild">
     <br><br><br><br><br><br><br><br><br>
-    <input type="text" id="searchBar">
-    <h1>Ergebnisse:</h1>
+    <input oninput="toogleSearch()" type="text" id="searchBar">
+    <div id="ergebnisse">
+        <h2>Schiffe</h2>
+        <div id="ships">
+
+        </div>
+        <h2>Rüstung</h2>
+        <div id="armor">
+
+        </div>
+        <h2>Waffen</h2>
+        <div id="wapons">
+
+        </div>
+        <h2>Komponenten</h2>
+        <div id="components">
+
+        </div>
+
+    </div>
+    <div id="itemInfo">
+
+    </div>
     <hr>
     <footer>
         <div id="news">

@@ -24,6 +24,7 @@ function loadMode() {
             });
             document.documentElement.style.setProperty("--main-color", "#7D9BDB");
             document.documentElement.style.setProperty("--second-main", "#A7B5D2");
+            document.documentElement.style.setProperty("--second-main2", "#a7b5d23f");
             document.getElementById("head1").src = "../img/stanton2.jpg";
     
             
@@ -33,7 +34,8 @@ function loadMode() {
                 element.style.backgroundImage = 'url("../img/mode2.webp")';
             });
             document.documentElement.style.setProperty("--main-color", "#DB5A5A");
-            document.documentElement.style.setProperty("--second-main", "#DB5A5A");
+            document.documentElement.style.setProperty("--second-main", "#DB8181");
+            document.documentElement.style.setProperty("--second-main2", "#db81813b");
             document.getElementById("head1").src = "../img/pyro1.jpeg";
     
             
@@ -43,15 +45,61 @@ function loadMode() {
     }
 
 }
-for(let i = 0;i<ships.length;i++){
- console.log(ships[i].name)
+let shipList = "";
+let waponsList = "";
+let armorList = "";
+let componentsList = "";
+
+for (let i = 0; i < ships.length; i++) {
+    shipList += "<p class='ergS'>" + ships[i].name + "</p>";
 }
-for(let i = 0;i<wapons.length;i++){
-    console.log(wapons[i].name)
+for (let i = 0; i < wapons.length; i++) {
+    waponsList += "<p class='ergW'>" + wapons[i].name + "</p>";
 }
-for(let i = 0;i<armor.length;i++){
-    console.log(armor[i].name)
+for (let i = 0; i < armor.length; i++) {
+    armorList += "<p class='ergA'>" + armor[i].name + "</p>";
 }
-for(let i = 0;i<components.length;i++){
-    console.log(components[i].name)
+for (let i = 0; i < components.length; i++) {
+    componentsList += "<p class='ergC'>" + components[i].name + "</p>";
+}
+
+document.getElementById("ships").innerHTML = shipList;
+document.getElementById("wapons").innerHTML = waponsList;
+document.getElementById("armor").innerHTML = armorList;
+document.getElementById("components").innerHTML = componentsList;
+function toogleSearch(){
+    shipList = "";
+    waponsList = "";
+    armorList = "";
+    componentsList = "";
+    let search = document.getElementById("searchBar").value;
+    for (let i = 0; i < ships.length; i++) {
+        if (ships[i].name.toLowerCase().includes(search.toLowerCase())){
+            shipList += "<p class='ergS'>" + ships[i].name + "</p>";
+        }
+
+    }
+    for (let i = 0; i < wapons.length; i++) {
+        if (wapons[i].name.toLowerCase().includes(search.toLowerCase())){
+            waponsList += "<p class='ergW'>" + wapons[i].name + "</p>";
+        }
+
+    }
+    for (let i = 0; i < armor.length; i++) {
+        if (armor[i].name.toLowerCase().includes(search.toLowerCase())){
+            armorList += "<p class='ergA'>" + armor[i].name + "</p>";
+        }
+
+    }
+    for (let i = 0; i < components.length; i++) {
+        if (components[i].name.toLowerCase().includes(search.toLowerCase())){
+            componentsList += "<p class='ergC'>" + components[i].name + "</p>";
+        }
+
+    }
+    
+    document.getElementById("ships").innerHTML = shipList;
+    document.getElementById("wapons").innerHTML = waponsList;
+    document.getElementById("armor").innerHTML = armorList;
+    document.getElementById("components").innerHTML = componentsList;
 }

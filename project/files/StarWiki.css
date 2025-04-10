@@ -1,6 +1,7 @@
 :root{
     --main-color: #7D9BDB;
     --second-main: #A7B5D2;
+    --second-main2: #a7b5d23f;
 }
 @font-face {
     font-family: MainFont;
@@ -290,4 +291,31 @@ input{
     width: 4vw;
     height: 4vw;
     border: 2px solid black;
+}
+#ergebnisse h2{
+    font-size: 5vw;
+    text-align: center;
+}
+#ergebnisse div{
+    width: 60vw;
+    margin-left: 20vw;
+    background-color: rgba(128, 128, 128, 0.448);
+    border: grey solid 3px;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+.ergA,.ergC,.ergW,.ergS{
+    font-size: 2vw;
+    background-color: var(--second-main2);
+    margin: 1vw;
+    padding: 0.5vw;
+    border-radius: 10px;
+    transition: 2s;
+    transition: font-size 0.1s;
+}
+.ergA:hover,.ergC:hover,.ergW:hover,.ergS:hover{
+    font-size: 3vw;
+}
+#ergebnisse h2:hover{
+    background-color: #7d9bdb00;
 }
