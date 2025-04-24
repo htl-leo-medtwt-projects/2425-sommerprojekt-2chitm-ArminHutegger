@@ -360,5 +360,48 @@ input{
 }
 #inf p{
     font-size: 2.7vw;
-
+}
+.ship-select {
+    width: 70vw;
+    height: 40vh;
+    margin-bottom: 10px;
+    overflow: auto;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #000000;
+    margin: auto;
+    background-image: url(../img/shipSelection.webp);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 150%;
+}
+.content {
+    height: 200px;
+}
+.inner-box::-webkit-scrollbar {
+    display: none;
+}
+#shipHead{
+    text-align: top;
+    transition: none;
+    font-size: 5vw;
+}
+#shipHead:hover{
+    background-color: #00000000;
+}
+.shipInList{
+    padding: 0.5vw;
+    transition: 0.6s background-color;
+    border-radius: 5px;
+}
+.shipInList:hover{
+    background-color: rgba(255, 255, 255, 0.375);
+}
+#searchShip{
+    width: 30vw;
+    height: 2vw;
+    margin: 3vw;
+    margin-left: 35vw;
 }

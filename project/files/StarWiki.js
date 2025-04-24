@@ -49,19 +49,23 @@ let shipList = "";
 let waponsList = "";
 let armorList = "";
 let componentsList = "";
+try{
+    for (let i = 0; i < ships.length; i++) {
+        shipList += `<p onclick='startVid( "${ships[i].name}","${ships[i].type}","${ships[i].manufacturer}","${ships[i].role}","${ships[i].max_speed}","${ships[i].cargo_capacity}")' class='ergS'>${ships[i].name}</p>`;
+    }
+    for (let i = 0; i < wapons.length; i++) {
+        waponsList += `<p onclick='startVid( "${wapons[i].name}","${wapons[i].type}","${wapons[i].size}","${wapons[i].manufacturer}","${wapons[i].fire_mode}","${wapons[i].use}")' class='ergW'>${wapons[i].name}</p>`;
+    }
+    for (let i = 0; i < armor.length; i++) {
+        armorList += `<p onclick='startVid( "${armor[i].name}","${armor[i].type}","${armor[i].protection_level}","${armor[i].manufacturer}","${armor[i].classification}","${armor[i].use}")' class='ergA'>${armor[i].name}</p>`;
+    }
+    for (let i = 0; i < components.length; i++) {
+        componentsList += `<p onclick='startVid( "${components[i].name}","${components[i].type}","${components[i].size}","${components[i].manufacturer}","${components[i].grade}","${components[i].special_feature}")' class='ergC'>${components[i].name}</p>`;
+    }
+}catch{
 
-for (let i = 0; i < ships.length; i++) {
-    shipList += `<p onclick='startVid( "${ships[i].name}","${ships[i].type}","${ships[i].manufacturer}","${ships[i].role}","${ships[i].max_speed}","${ships[i].cargo_capacity}")' class='ergS'>${ships[i].name}</p>`;
 }
-for (let i = 0; i < wapons.length; i++) {
-    waponsList += `<p onclick='startVid( "${wapons[i].name}","${wapons[i].type}","${wapons[i].size}","${wapons[i].manufacturer}","${wapons[i].fire_mode}","${wapons[i].use}")' class='ergW'>${wapons[i].name}</p>`;
-}
-for (let i = 0; i < armor.length; i++) {
-    armorList += `<p onclick='startVid( "${armor[i].name}","${armor[i].type}","${armor[i].protection_level}","${armor[i].manufacturer}","${armor[i].classification}","${armor[i].use}")' class='ergA'>${armor[i].name}</p>`;
-}
-for (let i = 0; i < components.length; i++) {
-    componentsList += `<p onclick='startVid( "${components[i].name}","${components[i].type}","${components[i].size}","${components[i].manufacturer}","${components[i].grade}","${components[i].special_feature}")' class='ergC'>${components[i].name}</p>`;
-}
+
 try{
     document.getElementById("ships").innerHTML = shipList;
 document.getElementById("wapons").innerHTML = waponsList;

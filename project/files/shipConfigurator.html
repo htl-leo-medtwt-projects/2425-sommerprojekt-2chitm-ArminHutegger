@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ship Configurator</title>
-    <script defer src="../data/armor.js"></script>
-    <script defer src="../data/components.js"></script>
-    <script defer src="../data/Ships.js"></script>
-    <script src="../data/wapons.js"></script>
+    <script derfer src="../data/schipConf.js"></script>
+    <script derfer src="../data/powerPlants.js"></script>
     <script defer src="StarWiki.js"></script>
+    <script defer src="configurater.js"></script>
     <link rel="stylesheet" href="StarWiki.css">
 </head>
 <body>
@@ -22,78 +20,31 @@
     <h1>Ship Configurator</h1>
     <h2 class="slogen">Sie Konfigurieren wir berechnen!</h2>
     <br><br><br><br>
-    <div id="shipIn">Schiff:<input type="text"></div>
     <br><br><br><br>
+    <br><br><br><br><br>
     <img id="backImg" src="../img/shipConf.jpg" alt="bild">
-    <div id="parts">
-        <div>
-            <h2>Waffen</h2>
-            <select>
-                <option>Beispieloption 1</option>
-                <option>Beispieloption 2</option>
-                <option>Beispieloption 3</option>
-                <option>Beispieloption 4</option>
-                <option>Beispieloption 5</option>
-            </select>
-                <h3>Bild Von Teil</h3>
+    <input oninput="search()" id="searchShip" type="text">
+        <div class="ship-select">
+            <h2 id="shipHead">Schiffe:</h2>
+            
+            <div id="shipList">
+                
+            </div>
         </div>
-        <div>
-            <h2>Torpedos und Raketen</h2>
-            <select>
-                <option>Beispieloption 1</option>
-                <option>Beispieloption 2</option>
-                <option>Beispieloption 3</option>
-                <option>Beispieloption 4</option>
-                <option>Beispieloption 5</option>
-            </select>
-            <h3>Bild Von Teil</h3>
+    <div id="confMenü">
+        <div id="power">
+
         </div>
-        <div>
-            <h2>Schilde</h2>
-            <select>
-                <option>Beispieloption 1</option>
-                <option>Beispieloption 2</option>
-                <option>Beispieloption 3</option>
-                <option>Beispieloption 4</option>
-                <option>Beispieloption 5</option>
-            </select>
-            <h3>Bild Von Teil</h3>
+        <div id="cooler">
+
         </div>
-        <div>
-            <h2>Antrieb</h2>
-            <select>
-                <option>Beispieloption 1</option>
-                <option>Beispieloption 2</option>
-                <option>Beispieloption 3</option>
-                <option>Beispieloption 4</option>
-                <option>Beispieloption 5</option>
-            </select>
-            <h3>Bild Von Teil</h3>
+        <div id="shild">
+
         </div>
-        <div>
-            <h2>Kühler</h2>
-            <select>
-                <option>Beispieloption 1</option>
-                <option>Beispieloption 2</option>
-                <option>Beispieloption 3</option>
-                <option>Beispieloption 4</option>
-                <option>Beispieloption 5</option>
-            </select>
-            <h3>Bild Von Teil</h3>
-        </div>
-        <div>
-            <h2>Power Plant</h2>
-            <select>
-                <option>Beispieloption 1</option>
-                <option>Beispieloption 2</option>
-                <option>Beispieloption 3</option>
-                <option>Beispieloption 4</option>
-                <option>Beispieloption 5</option>
-            </select>
-            <h3>Bild Von Teil</h3>
+        <div id="quantum">
+
         </div>
     </div>
-    <h1>Schiff Werte</h1>
     <hr>
     <footer>
         <div id="news">
