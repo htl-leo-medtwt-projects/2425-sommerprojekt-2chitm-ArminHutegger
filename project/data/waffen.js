@@ -58,9 +58,7 @@ let waffen =[
       "type": "Laser",
       "burstDPS": 350,
       "size": 3
-    }
-  ]
-  [
+    },
     {
       "name": "Destructor Rail",
       "type": "Railgun",
@@ -120,9 +118,7 @@ let waffen =[
       "type": "Railgun",
       "burstDPS": 620,
       "size": 4
-    }
-  ]
-  [
+    },
     {
       "name": "Specter Rail-X",
       "type": "Railgun",
@@ -182,9 +178,7 @@ let waffen =[
       "type": "Energy",
       "burstDPS": 350,
       "size": 2
-    }
-  ]
-  [
+    },
     {
       "name": "Titanfall Laser-17",
       "type": "Laser",
@@ -244,9 +238,7 @@ let waffen =[
       "type": "Plasma",
       "burstDPS": 470,
       "size": 3
-    }
-  ]
-  [
+    },
     {
       "name": "Oblivion Rail-27",
       "type": "Railgun",
@@ -306,7 +298,126 @@ let waffen =[
       "type": "Energy",
       "burstDPS": 370,
       "size": 2
+    },
+    {
+      "name": "Vanguard Rail-37",
+      "type": "Railgun",
+      "burstDPS": 760,
+      "size": 4
+    },
+    {
+      "name": "Solar Flare-38",
+      "type": "Laser",
+      "burstDPS": 330,
+      "size": 3
+    },
+    {
+      "name": "Talon SMG-39",
+      "type": "Ballistic",
+      "burstDPS": 250,
+      "size": 2
+    },
+    {
+      "name": "Magna Gauss-40",
+      "type": "Gauss",
+      "burstDPS": 605,
+      "size": 4
+    },
+    {
+      "name": "Arcfire Pulse-41",
+      "type": "Energy",
+      "burstDPS": 355,
+      "size": 2
+    },
+    {
+      "name": "Pyro Cannon-42",
+      "type": "Plasma",
+      "burstDPS": 510,
+      "size": 3
+    },
+    {
+      "name": "Crimson Laser-43",
+      "type": "Laser",
+      "burstDPS": 295,
+      "size": 2
+    },
+    {
+      "name": "Obsidian Rail-44",
+      "type": "Railgun",
+      "burstDPS": 740,
+      "size": 4
+    },
+    {
+      "name": "Fury SMG-45",
+      "type": "Ballistic",
+      "burstDPS": 235,
+      "size": 1
+    },
+    {
+      "name": "Ion Blaze-46",
+      "type": "Energy",
+      "burstDPS": 365,
+      "size": 2
+    },
+    {
+      "name": "Titan Rail-47",
+      "type": "Railgun",
+      "burstDPS": 950,
+      "size": 5
+    },
+    {
+      "name": "Solar Devastator-48",
+      "type": "Laser",
+      "burstDPS": 720,
+      "size": 5
+    },
+    {
+      "name": "Leviathan Gauss-49",
+      "type": "Gauss",
+      "burstDPS": 890,
+      "size": 5
+    },
+    {
+      "name": "Hellfire Cannon-50",
+      "type": "Plasma",
+      "burstDPS": 860,
+      "size": 5
+    },
+    {
+      "name": "Nova Pulse-51",
+      "type": "Energy",
+      "burstDPS": 780,
+      "size": 5
+    },
+    {
+      "name": "Vortex Blaster-52",
+      "type": "Laser",
+      "burstDPS": 730,
+      "size": 5
+    },
+    {
+      "name": "Thunderstrike Rail-53",
+      "type": "Railgun",
+      "burstDPS": 970,
+      "size": 5
+    },
+    {
+      "name": "Oblivion Gauss-54",
+      "type": "Gauss",
+      "burstDPS": 920,
+      "size": 5
+    },
+    {
+      "name": "Starbreaker Plasma-55",
+      "type": "Plasma",
+      "burstDPS": 880,
+      "size": 5
+    },
+    {
+      "name": "Eclipse Storm-56",
+      "type": "Energy",
+      "burstDPS": 800,
+      "size": 5
     }
   ]
-        
-  
+    
