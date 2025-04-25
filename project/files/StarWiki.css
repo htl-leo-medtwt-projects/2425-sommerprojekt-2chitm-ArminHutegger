@@ -276,7 +276,7 @@ input{
 #parts div{
     width: 40vw;
     border: var(--second-main) 3px solid;
-    border-radius: 20px;
+    border-radius:20px;
     margin: 2vw;
 }
 #backImg{
@@ -365,7 +365,7 @@ input{
     width: 70vw;
     height: 40vh;
     margin-bottom: 10px;
-    overflow: auto;
+    overflow: scroll;
     border: 3px solid #ccc;
     border-radius: 5px;
     padding: 10px;
@@ -404,4 +404,96 @@ input{
     height: 2vw;
     margin: 3vw;
     margin-left: 35vw;
+}
+#partes{
+    opacity: 1;
+    z-index: 100;
+    font-size: 300%;
+}
+.power,.cooler,.shild,#quantum,.waffen1,.waffen2,.waffen3,.waffen4,.waffen5{
+    overflow: auto;
+    height: 30vh;
+}
+.pa{
+    z-index: 1000;
+    transition: background-color 0.5s ;
+    border-radius: 5px;
+}
+.pa:hover{
+    background-color: var(--second-main2);
+}
+#partes{
+text-align: center;
+}
+#partes h2, #partes h3{
+    color: var(--main-color);
+}
+.p,.c,.w,.s,.q{
+    border: var(--second-main) 3px solid;
+    border-radius: 5px;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+}
+.power,.cooler,.waffen1,.waffen2,.waffen3,.waffen4,.waffen5,.waffen6,#quantum,.shild{
+    margin: 3vw;
+    padding: 5vw;
+    font-weight: lighter;
+}
+.power{
+    background-image: url(../img/Power_plant.webp);
+    background-size: cover;
+    background-position: center;
+}
+.cooler{
+    background-image: url(../img/Coolers.webp);
+    background-size: cover;
+    background-position: center;
+}
+#quantum{
+    background-image: url(../img/quantum.webp);
+    background-size: cover;
+    background-position: center;
+}
+.shild{
+    background-image: url(../img/schildGen.webp);
+    background-size: cover;
+    background-position: center;
+}
+.waffen2,.waffen3,.waffen4,.waffen5,.waffen6{
+    background-image: url(../img/waffenImg.png);
+    background-size: cover;
+    background-position: center;
+}
+#showConf{
+    width: 20vw;
+    height: 5vw;
+    border: var(--main-color) 3px solid;
+    border-radius: 20px;
+    background-color: black;
+    margin-left: 40vw;
+    margin-top: 5vw;
+    transition: background-color 0.5s;
+    text-align: center;
+    font-size: 3vw;
+}
+#showConf:hover{
+    background-color: var(--second-main2);
+}
+#configuration{
+    z-index: -100;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    background-image: url(../img/confBack.png);
+    background-size: cover;
+}
+#werte{
+    text-align: center;
+    font-size: 3vw;
+}
+#werte h2:hover{
+    background-color: #00000000;
 }

@@ -1,4 +1,4 @@
-let powerPlants=[
+let powerPlant =[
     {
         "name": "PowerPlant-X2",
         "grade": "A",

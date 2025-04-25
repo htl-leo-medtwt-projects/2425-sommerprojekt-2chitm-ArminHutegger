@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../data/quantumDrives.js"></script>
+    <script defer src="../data/shilds.js"></script>
+    <script defer src="../data/waffen.js"></script>
     <script derfer src="../data/schipConf.js"></script>
     <script derfer src="../data/powerPlants.js"></script>
+    <script derfer src="../data/coolers.js"></script>
     <script defer src="StarWiki.js"></script>
     <script defer src="configurater.js"></script>
     <link rel="stylesheet" href="StarWiki.css">
 </head>
 <body>
+<div id="conf1">
+
+
     <div class="navbar">
         <a href="StarWiki.html">Home</a>
         <a href="tradeTool.html">Trade Tool</a>
@@ -31,20 +38,10 @@
                 
             </div>
         </div>
-    <div id="confMenü">
-        <div id="power">
-
-        </div>
-        <div id="cooler">
-
-        </div>
-        <div id="shild">
-
-        </div>
-        <div id="quantum">
-
-        </div>
+    <div id="partes">
     </div>
+    <div onclick="showConf()" id="showConf">Show Configuration</div>
+    
     <hr>
     <footer>
         <div id="news">
@@ -58,5 +55,17 @@
         </div>
         <img id="logo" src="../img/Star-Citizen-Symbol.png" alt="logo">
     </footer>
+</div>
+<div id="configuration">
+    <h1 id="confName">
+
+    </h1>
+    <div id="werte">
+
+    </div>
+    <div id="graph">
+
+    </div>
+</div>
 </body>
 </html>
