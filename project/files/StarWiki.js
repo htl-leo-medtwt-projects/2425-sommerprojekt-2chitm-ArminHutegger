@@ -43,7 +43,6 @@ function loadMode() {
     }catch{
 
     }
-
 }
 let shipList = "";
 let waponsList = "";

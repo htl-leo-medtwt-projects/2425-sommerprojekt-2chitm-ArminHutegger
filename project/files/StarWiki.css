@@ -390,6 +390,7 @@ input{
 }
 #shipHead:hover{
     background-color: #00000000;
+    
 }
 .shipInList{
     padding: 0.5vw;
@@ -398,6 +399,7 @@ input{
 }
 .shipInList:hover{
     background-color: rgba(255, 255, 255, 0.375);
+    cursor: pointer;
 }
 #searchShip{
     width: 30vw;
@@ -421,6 +423,7 @@ input{
 }
 .pa:hover{
     background-color: var(--second-main2);
+    cursor: pointer;
 }
 #partes{
 text-align: center;
@@ -459,7 +462,7 @@ text-align: center;
     background-size: cover;
     background-position: center;
 }
-.waffen2,.waffen3,.waffen4,.waffen5,.waffen6{
+.waffen1,.waffen2,.waffen3,.waffen4,.waffen5,.waffen6{
     background-image: url(../img/waffenImg.png);
     background-size: cover;
     background-position: center;
@@ -475,9 +478,11 @@ text-align: center;
     transition: background-color 0.5s;
     text-align: center;
     font-size: 3vw;
+    margin-bottom: 5vw;
 }
 #showConf:hover{
     background-color: var(--second-main2);
+    cursor: pointer;
 }
 #configuration{
     z-index: -100;
@@ -492,8 +497,31 @@ text-align: center;
 }
 #werte{
     text-align: center;
-    font-size: 3vw;
+    font-size: 1.7vw;
+}
+#confName{
+    margin: 1vw;
+    margin-bottom: 1vw;
+    font-size: 6vw;
 }
 #werte h2:hover{
     background-color: #00000000;
+}
+canvas {
+    max-width: 800px;
+    width: 50vw;
+    color: white;
+    margin-left: 10vw;
+  }
+#flexw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cconf{
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    width: 7vw;
+    height: 7vw;
 }

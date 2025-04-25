@@ -154,6 +154,7 @@ function selectShip(shipId){
         }
         el.innerHTML += wap;
     });
+    document.getElementById("partes").style.marginTop = "10vw"
 }
 function addP(id){ 
     document.querySelector(".p").remove()   
@@ -186,26 +187,30 @@ function showConf(){
     document.getElementById("conf1").innerHTML = ""
     document.getElementById("confName").innerHTML = shipName
     let dps = 0;
+    let hp = 0;
+    let regen = 0;
+    let powerPlantGeneration =0
+    let powerPlantCooling =0;
+    let powerPlantHP =0;
+    let coolingRate = 0;
+    let maxSpeed = 0;
     for(let i = 0;i<wapo.length;i++){
         dps += wapo[i].burstDPS;
     }
-    let hp = 0;
-    let regen = 0;
+
     for(let i = 0;i<shi.length;i++){
         hp += shi[i].poolHp
         regen += shi[i].regenMax
     }
-    let coolingRate = 0;
+
     for(let i = 0;i<coo.length;i++){
         coolingRate += coo[i].coolingGeneration
     }
-    let maxSpeed = 0;
+
     for(let i = 0;i<qan.length;i++){
         maxSpeed += qan[i].maxSpeed
     }
-    let powerPlantGeneration =0
-    let powerPlantCooling =0;
-    let powerPlantHP =0;
+
     for(let i = 0;i<pow.length;i++){
         powerPlantGeneration += pow[i].maxPowerGeneration
         powerPlantCooling += pow[i].cooling
@@ -223,4 +228,44 @@ function showConf(){
     <h2>Power Plant Cooling Rate:${powerPlantCooling}</h2>
     <h2>Power Plant HP:${powerPlantHP}</h2>
     `
+    //einiges ist fremdcode
+    const stats = {
+        dps: dps /15,
+        hp: hp /5,
+        regen: regen,
+        powerPlantGeneration: powerPlantGeneration,
+        powerPlantCooling: powerPlantCooling,
+        powerPlantHP: powerPlantHP,
+        coolingRate: coolingRate,
+        maxSpeed: maxSpeed
+      };
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: Object.keys(stats),
+        datasets: [{
+          data: Object.values(stats),
+          backgroundColor: 'rgba(54, 162, 235, 0.6)',
+          borderColor: 'rgba(54, 162, 235, 1)',
+          borderWidth: 1,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: false
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+}
+function closeConf(){
+    location.reload(true);
 }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script defer src="../data/quantumDrives.js"></script>
     <script defer src="../data/shilds.js"></script>
     <script defer src="../data/waffen.js"></script>
@@ -57,15 +58,19 @@
     </footer>
 </div>
 <div id="configuration">
+    <img id="cconf" onclick="closeConf()" src="../img/close-icon.png" alt="exit">
     <h1 id="confName">
 
     </h1>
-    <div id="werte">
+    <div id="flexw">
+        <div id="werte">
 
+        </div>
+        <div id="graph">
+            <canvas id="myChart"></canvas>
+        </div>
     </div>
-    <div id="graph">
 
-    </div>
 </div>
 </body>
 </html>
