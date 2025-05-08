@@ -16,7 +16,6 @@ function swich(){
     }
 }
 function loadMode() {
-    try{
         let mode = localStorage.getItem("mode");
         if (mode === "Stanton") {
             Array.from(document.getElementsByClassName("box1")).forEach(element => {
@@ -25,8 +24,21 @@ function loadMode() {
             document.documentElement.style.setProperty("--main-color", "#7D9BDB");
             document.documentElement.style.setProperty("--second-main", "#A7B5D2");
             document.documentElement.style.setProperty("--second-main2", "#a7b5d23f");
-            document.getElementById("head1").src = "../img/stanton2.jpg";
-    
+            try{
+                document.getElementById("head1").src = "../img/stanton2.jpg";
+            }catch{
+
+            }
+            try{
+                let elements = document.querySelectorAll('.inSearch');
+                elements.forEach((element) => {
+                    element.style.backgroundImage = 'url("../img/inSeachBack.jpg")';
+                  });
+                document.getElementById("head11").src = "../img/trade1.jpg"
+            }catch{
+
+            }
+            
             
     
         } else if (mode === "Pyro") {
@@ -36,11 +48,20 @@ function loadMode() {
             document.documentElement.style.setProperty("--main-color", "#DB5A5A");
             document.documentElement.style.setProperty("--second-main", "#DB8181");
             document.documentElement.style.setProperty("--second-main2", "#db81813b");
-            document.getElementById("head1").src = "../img/pyro1.jpeg";
-    
-            
-        }
-    }catch{
+            try{
+                document.getElementById("head1").src = "../img/pyro1.jpeg";
+            }catch{
+
+            }
+            try{
+                document.getElementById("head11").src = "../img/tradeHead.jpg"
+                let elements = document.querySelectorAll('.inSearch');
+                elements.forEach((element) => {
+                    element.style.backgroundImage = 'url("../img/inSearchBack2.jpg")';
+                  });
+            }catch{
+                
+            }
 
     }
 }

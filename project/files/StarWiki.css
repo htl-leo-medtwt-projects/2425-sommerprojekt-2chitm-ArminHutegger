@@ -212,7 +212,14 @@ input{
 .slogen:hover{
     background-color: rgba(0, 0, 0, 0);
 }
-.head11{
+#head11{
+    position: absolute;
+    top: -5vw;
+    width: 100vw;
+    z-index: -100;
+    opacity: 0.5;
+}
+#head22{
     position: absolute;
     top: -5vw;
     width: 100vw;
@@ -524,4 +531,69 @@ canvas {
     right: 2vw;
     width: 7vw;
     height: 7vw;
+}
+#opt{
+    text-align: center;
+    font-size: 200%;
+}
+#optCheck{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 150%;
+}
+#optCheck input{
+transform: scale(3);
+margin: 4vw;
+}
+#opt > input{
+    width: 70vw;
+    height: 5vh;
+    font-size: 200%;
+}
+#opt > h2:hover{
+    background-color: #00000000;
+}
+.inSearch{
+    width: 60vw;
+    height: 30vw;
+    overflow: scroll;
+    background-image: url(../img/inSeachBack.jpg);
+    background-size: cover;
+    margin: 4vw;
+    margin-left: 20vw;
+    border: var(--second-main) 5px solid;
+    border-radius: 10px;
+}
+.oShip{
+    display: flex;
+    justify-content: space-around;
+    color: black;
+}
+.oWare{
+    display: flex;
+    justify-content: space-around;
+    color: black;
+}
+.h2Ship{
+    background-color: #00000000;
+    padding: 2vw;
+    transition: background-color 0.5s;
+}
+.h2Ship:hover{
+    background-color: rgba(255, 255, 255, 0.483);
+}
+#bTrade{
+    text-align: center;
+    width: 30vw;
+    margin-left: 35vw;
+    height: 7vh;
+    font-size: 250%;
+    background-color: var(--second-main2);
+    border: var(--main-color) solid 3px;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+#bTrade:hover{
+    background-color: var(--second-main);
 }

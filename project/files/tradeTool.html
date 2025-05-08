@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trade Tool</title>
-    <script src="trade.js"></script>
+    <script src="../data/güter.js"></script>
+    <script src="../data/locations.js"></script>
+    <script src="../data/shipsCargoSCU.js"></script>
+    <script defer src="trade.js"></script>
     <script defer src="StarWiki.js"></script>
     <link rel="stylesheet" href="StarWiki.css">
 </head>
@@ -18,21 +21,31 @@
     </div>
     <h1>Trade Tools</h1>
     <h2 class="slogen">Die Besten Routen im Verse!</h2>
-    <img class="head11" src="../img/trade1.jpg" alt="bild">
+    <img id="head11" src="../img/trade1.jpg" alt="bild">
     <br><br><br><br><br><br><br><br><br><br>
-    <div id="tradeOption">
-        Your Ship: <input type="text">
-        <br>
-        <br>
-        Verfügbare AUEC: <input type="number">
-        <div id="option">
-            <label><input type="checkbox"> Illegale Ware erlauben</label>
-            <label><input type="checkbox"> Riskante Routen anzeigen</label>
-            <label><input type="checkbox"> Boden Locations erlauebn</label>
+    <div id="opt">
+        <h2 id="shipT">Ship</h2>
+        <input id="inS" oninput="tradeShip()" type="text">
+        <div class="inSearch" id="optShip">
+
+        </div>
+        <h2>AUEC</h2>
+        <input type="number">
+        <div id="optCheck">
+            <label>Riskante Routen anzeigen<input type="checkbox"> </label>
+            <label>Boden Locations erlaueben<input type="checkbox"> </label>
+        </div>
+        <h2 id="WareT">Ware</h2>
+        <input oninput="tradeWare()" id="inW" type="text">
+        <div class="inSearch" id="optWare">
+ 
         </div>
     </div>
-    <h1>Gefundene Routen</h1>
-    <hr>
+    <div onclick="triggerTrade()" id="bTrade">Calculate best route</div>
+    <div id="tradeScreen">
+
+    </div>   
+
     <footer>
         <div id="news">
             <h2>Newsletter</h2>
