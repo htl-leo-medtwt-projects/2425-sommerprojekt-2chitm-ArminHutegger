@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="StarWiki.css">
 </head>
 <body>
+    <div id="rest">
+
+
     <div class="navbar">
         <a href="StarWiki.html">Home</a>
         <a href="tradeTool.html">Trade Tool</a>
@@ -30,11 +33,7 @@
 
         </div>
         <h2>AUEC</h2>
-        <input type="number">
-        <div id="optCheck">
-            <label>Riskante Routen anzeigen<input type="checkbox"> </label>
-            <label>Boden Locations erlaueben<input type="checkbox"> </label>
-        </div>
+        <input id="money" type="number">
         <h2 id="WareT">Ware</h2>
         <input oninput="tradeWare()" id="inW" type="text">
         <div class="inSearch" id="optWare">
@@ -42,9 +41,7 @@
         </div>
     </div>
     <div onclick="triggerTrade()" id="bTrade">Calculate best route</div>
-    <div id="tradeScreen">
 
-    </div>   
 
     <footer>
         <div id="news">
@@ -58,5 +55,9 @@
         </div>
         <img id="logo" src="../img/Star-Citizen-Symbol.png" alt="logo">
     </footer>
+</div>
+<div onclick="closeConf()" id="tradeScreen">
+
+</div>   
 </body>
 </html>

@@ -584,6 +584,7 @@ margin: 4vw;
     background-color: rgba(255, 255, 255, 0.483);
 }
 #bTrade{
+
     text-align: center;
     width: 30vw;
     margin-left: 35vw;
@@ -593,7 +594,50 @@ margin: 4vw;
     border: var(--main-color) solid 3px;
     border-radius: 5px;
     transition: background-color 0.5s;
+    margin-top: 5vw;
 }
 #bTrade:hover{
     background-color: var(--second-main);
+}
+#tradeScreen{
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1000;
+    opacity: 0;
+    color: white;
+    background-size: cover;
+    background-image: url(../img/tradeBack.webp);
+}
+#route{
+    display: flex;
+    justify-content: space-around;
+
+}
+#route h1{
+    font-size: 5vw;
+}
+#sName{
+    width: 70vw;
+    margin-left: 10vw;
+    border: var(--second-main) solid 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 7vw;
+    margin-top: 3vw;
+    background-color: rgba(128, 128, 128, 0.459);
+    padding: 4vw;
+}
+#run{
+    width: 70vw;
+    margin-left: 10vw;
+    border: var(--second-main) solid 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 3vw;
+    background-color: rgba(128, 128, 128, 0.485);
+    padding: 4vw;
 }

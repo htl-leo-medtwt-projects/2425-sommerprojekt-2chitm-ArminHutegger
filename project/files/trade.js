@@ -28,6 +28,7 @@ function tradeShip() {
 }
 function saveShip(ship) {
     savedShip = ship
+    
     console.log(savedShip)
     document.getElementById("inS").remove()
     document.getElementById("optShip").remove()
@@ -61,7 +62,7 @@ function tradeWare() {
     for (let i = 0; i < güter.length; i++) {
         const ware = güter[i];
 
-        if (!ware || !ware.name) continue; // Sicherstellen, dass das Objekt valide ist
+        if (!ware || !ware.name) continue;
 
         if (ware.name.toLowerCase().includes(suchbegriff.toLowerCase())) {
             WareBuild += "<div class='oShip' onclick=\"saveWare('" + ware.name.replace(/'/g, "\\'") + "')\">";
@@ -73,4 +74,65 @@ function tradeWare() {
 
     document.getElementById("optWare").innerHTML = WareBuild;
 }
+function triggerTrade(){
+    getBestRoute()
+    document.getElementById("rest").remove()
+    document.getElementById("tradeScreen").style.zIndex = 1000;
+    document.getElementById("tradeScreen").style.opacity = 1;
+}
+function getBestRoute(){
+    let auec = document.getElementById("money").value
+    let leastExpensive = locations[0].goods_prices[savedWare]
+    let mostExpensive = locations[0].goods_prices[savedWare]
 
+
+    let start = ""
+    let end = ""
+    for(let i = 1;i<locations.length;i++){
+        if(leastExpensive > locations[i].goods_prices[savedWare]){
+            leastExpensive = locations[i].goods_prices[savedWare]
+        }
+    }
+    for(let i = 0;i<locations.length;i++){
+        if(locations[i].goods_prices[savedWare] == leastExpensive){
+            start = locations[i].name
+            console.log(start)
+            break
+        }
+    }
+    for(let i = 1;i<locations.length;i++){
+        if(mostExpensive < locations[i].goods_prices[savedWare]){
+            mostExpensive = locations[i].goods_prices[savedWare]
+        }
+    }
+    for(let i = 0;i<locations.length;i++){
+        if(locations[i].goods_prices[savedWare] == mostExpensive){
+            end = locations[i].name
+            console.log(end)
+            break
+        }
+    }
+    let scus = Math.ceil(auec / leastExpensive) ;
+
+
+    console.log(scus)
+    let size
+    for(let i = 0;i<scu.length;i++){
+        if(savedShip == scu[i].name){
+            size = scu[i].cargo_capacity_scu
+            break
+        }
+    }
+    if(scus > size){
+        scus = size;
+    }
+    let profit = (mostExpensive -leastExpensive)*scus
+    console.log(profit) 
+    let tra = document.getElementById("tradeScreen")
+    tra.innerHTML += "<div id='route'> <h1>"+start+"</h1><h1>---></h1><h1>"+end+"</h1> </div>"
+    tra.innerHTML += "<div id='sName'>Ship: "+savedShip+"</div>"
+    tra.innerHTML += "<div id='run'>"+scus+" SCU "+savedWare+" Für: "+auec+" AUEC</div>"
+}
+function closeConf(){
+    location.reload(true);
+}
