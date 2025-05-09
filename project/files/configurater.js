@@ -59,7 +59,7 @@ function selectShip(shipId){
     buildConf += " <div class='q'><h2>Quantum Drive</h2><p class = 'size'>Size: "+quantum_driveSize+"</p><div id='quantum'></div></div>"
     for(let i = 0;i<weapons.length;i++){
         for(let j = 0;j<weapons[i].quantity;j++){
-                buildConf += "<div class=w><h2>Wapon</h2><p class = 'size'>Size: "+weapons[i].size+"</p><div class='waffen"+weapons[i].size+"'></div></div>"
+                buildConf += "<div class=w><h2>Weapon</h2><p class = 'size'>Size: "+weapons[i].size+"</p><div class='waffen"+weapons[i].size+"'></div></div>"
                 sizeOrder.push(weapons[i].size)
         }
 

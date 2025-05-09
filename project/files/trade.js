@@ -125,13 +125,14 @@ function getBestRoute(){
     }
     if(scus > size){
         scus = size;
+
     }
     let profit = (mostExpensive -leastExpensive)*scus
     console.log(profit) 
     let tra = document.getElementById("tradeScreen")
     tra.innerHTML += "<div id='route'> <h1>"+start+"</h1><h1>---></h1><h1>"+end+"</h1> </div>"
     tra.innerHTML += "<div id='sName'>Ship: "+savedShip+"</div>"
-    tra.innerHTML += "<div id='run'>"+scus+" SCU "+savedWare+" Für: "+auec+" AUEC</div>"
+    tra.innerHTML += "<div id='run'>"+scus+" SCU "+savedWare+" Für: "+profit+" AUEC Profit</div>"
 }
 function closeConf(){
     location.reload(true);
