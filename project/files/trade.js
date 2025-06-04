@@ -117,7 +117,7 @@ function getBestRoute(){
 
     console.log(scus)
     let size
-    for(let i = 0;i<scu.length;i++){
+    for(let i = 0;i<scu.length;i++)
         if(savedShip == scu[i].name){
             size = scu[i].cargo_capacity_scu
             break
@@ -133,7 +133,6 @@ function getBestRoute(){
     tra.innerHTML += "<div id='route'> <h1>"+start+"</h1><h1>---></h1><h1>"+end+"</h1> </div>"
     tra.innerHTML += "<div id='sName'>Ship: "+savedShip+"</div>"
     tra.innerHTML += "<div id='run'>"+scus+" SCU "+savedWare+" Für: "+profit+" AUEC Profit</div>"
-}
 function closeConf(){
     location.reload(true);
 }

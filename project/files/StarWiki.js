@@ -27,7 +27,6 @@ function loadMode() {
             try{
                 document.getElementById("head1").src = "../img/stanton2.jpg";
             }catch{
-
             }
             try{
                 let elements = document.querySelectorAll('.inSearch');
@@ -38,9 +37,6 @@ function loadMode() {
             }catch{
 
             }
-            
-            
-    
         } else if (mode === "Pyro") {
             Array.from(document.getElementsByClassName("box1")).forEach(element => {
                 element.style.backgroundImage = 'url("../img/mode2.webp")';
@@ -51,7 +47,6 @@ function loadMode() {
             try{
                 document.getElementById("head1").src = "../img/pyro1.jpeg";
             }catch{
-
             }
             try{
                 document.getElementById("head11").src = "../img/tradeHead.jpg"
