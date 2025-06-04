@@ -641,3 +641,53 @@ margin: 4vw;
     background-color: rgba(128, 128, 128, 0.485);
     padding: 4vw;
 }
+@media screen and (max-width:900px) {
+    .navbar{
+        width: 100vw;
+    }
+
+    p{
+        font-size: 250%;
+        margin: 2vw;
+    }
+    #about{
+        font-size: 80%;
+        width: 70vw;
+        margin-left: 15vw;
+    }
+    #threeText{
+        font-size: 100%;
+        margin-left: 30vw;
+        margin-top: 10vw;
+    }
+    #logo{
+        display: none;
+    }
+    #ic{
+        display: none;
+    }
+    #fu{
+        display: none;
+    }
+    footer{
+        text-align: center;
+        margin-left: 15vw;
+    }
+    #textBox{
+        display: none;
+    }
+    #ImgBox{
+        margin-top: 27vw;
+        transform: scale(1.5);
+    }
+    #head2{
+        transform: scale(1.1);
+    }
+    .navbar{
+        font-size: 50%;
+    }
+    #navIcon{
+        display: none;
+    }
+
+}

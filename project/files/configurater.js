@@ -89,7 +89,7 @@ function selectShip(shipId){
     let shild = "";
     for(let i = 0;i<shilds.length;i++){
         if(shilds[i].size == schildSize){
-        shild += "<div class='pa' onclick='addS("+i+")'>"+shilds[i].name+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Grade: "+shilds[i].grade+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp PoolHP: "+shilds[i].poolHp+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Size:"+coolers[i].size+"</div>"
+        shild += "<div class='pa' onclick='addS("+i+")'>"+shilds[i].name+" Grade: "+shilds[i].grade+" PoolHP: "+shilds[i].poolHp+" Size:"+coolers[i].size+"</div>"
     }
     }
     let elements = document.getElementsByClassName("shild");
