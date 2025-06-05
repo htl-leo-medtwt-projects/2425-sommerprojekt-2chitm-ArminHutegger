@@ -660,18 +660,18 @@ margin: 4vw;
         margin-left: 30vw;
         margin-top: 10vw;
     }
-    #logo{
+    .logo{
         display: none;
     }
-    #ic{
+    .ic{
         display: none;
     }
-    #fu{
+    .fu{
         display: none;
     }
     footer{
-        text-align: center;
-        margin-left: 15vw;
+
+        display: none;
     }
     #textBox{
         display: none;
@@ -689,5 +689,40 @@ margin: 4vw;
     #navIcon{
         display: none;
     }
-
+    #ships *,#armor *,#wapons *,#components *{
+        font-size: 130%;
+        padding: 5vw;
+    }
+    #searchBar{
+        height: 7vw;
+    }
+    #rest input{
+        font-size: 75%;
+    }
+    #opt{
+        font-size: 110%;
+    }
+    #bTrade{
+        width: 80vw;
+        margin-left: 10vw;
+        margin-top: 10vw;
+    }
+    #searchShip{
+        width: 80vw;
+        height: 5vh;
+        margin-top: -50vw;
+        margin-left: 9vw;
+    }
+    .pa{
+        font-size: 50%;
+    }
+    #flexw{
+        flex-direction: column;
+    }
+    #werte{
+        font-size: 150%;
+    }
+    #graph{
+        display: none;
+    }
 }

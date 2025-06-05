@@ -98,7 +98,7 @@ function toogleSearch(){
     let search = document.getElementById("searchBar").value;
     for (let i = 0; i < ships.length; i++) {
         if (ships[i].name.toLowerCase().includes(search.toLowerCase())){
-            shipList += `<p onclick='startVid( "${ships[i].name}","${ships[i].type}","${ships[i].manufacturer}","${ships[i].role}","${ships[i].max_speed}","${ships[i].cargo_capacity}")' class='ergS'>${ships[i].name}</p>`;
+            shipList += `<p  onclick='startVid( "${ships[i].name}","${ships[i].type}","${ships[i].manufacturer}","${ships[i].role}","${ships[i].max_speed}","${ships[i].cargo_capacity}")' class='ergS'>${ships[i].name}</p>`;
 
         }
 
